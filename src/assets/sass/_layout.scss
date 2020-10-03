@@ -5,9 +5,22 @@
 .logo-container-main{
 
 }
-.homelogo {
-    width: 200px;
 
+.fa-chevron-left:before {
+    font-size: 50pt;
+    color: #ffffff;
+    text-decoration: none;
+}
+.fa-chevron-right:before {
+    font-size: 50pt;
+    color: #ffffff;
+    text-decoration: none;
+}
+.homelogo {
+    width: 90px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: -300px;
 }
 .slide {background: transparent !important;}
 .waves {

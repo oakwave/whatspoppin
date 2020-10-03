@@ -84,8 +84,7 @@
 
                 {% include "partials/footer.njk" %}
             </main>
-<script src="https://kit.fontawesome.com/18c973bb79.js" crossorigin="anonymous"></script>
-
+{% include "partials/footersscripts.njk" %}
             {{ site.codeinjection_foot | safe if site.codeinjection_foot }}
             {{ codeinjection_foot | safe if codeinjection_foot }}
         </div>
