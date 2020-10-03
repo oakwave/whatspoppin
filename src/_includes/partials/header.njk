@@ -1,0 +1,33 @@
+{% from "partials/icon.njk" import icon %}
+
+<header class="site-head">
+    <div class="container">
+        <div class="site-mast">
+         <div class="waves"></div>
+
+                <div class="site-mast-left">
+                   {% include "partials/sidebar1.njk" %}
+              {% include "partials/sidebar2.njk" %}
+                    <a {% if page.url == "/" %}aria-current="page"{% endif %} href="{{ site.url }}">
+<picture>
+<source type="image/webp" srcset="/assets/img/logos/logo-lined-white-and-purple.webp" />
+<source type="image/svg+xml" srcset="/assets/img/logos/logo-lined-white-and-purple.svg" />
+<source type="image/png" srcset="/assets/img/logos/logo-lined-white-and-purpl.png" />
+<img class="mainlogo" src="/assets/img/logos/logo-lined-white-and-purple.png" />
+</picture>
+
+                    </a>
+                </div>
+
+            <div class="site-mast-right">
+
+        </div>
+        {% if page.url != '/' %}
+            <div class="site-banner">
+                <h1 class="site-banner-title">{{ site.title }}</h1>
+                <p class="site-banner-desc">{{ site.description }}</p>
+            </div>
+        {% endif %}
+
+    </div>
+</header>

@@ -1,0 +1,63 @@
+
+@mixin border-gradient-down {
+    border-image-source: linear-gradient(128deg, #121212 -79.65%, #333333 151.25%);
+    border: 3px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+  
+  }
+  @mixin border-gradient-up {
+    border-image-source: linear-gradient(128deg, #121212 -79.65%, #333333 151.25%);
+    border: 3px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+
+  }
+
+  @mixin border-purp {
+    border-color: #6c5ba7;
+    border: 1px solid;
+
+  }
+  @mixin effectunderline {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+  }
+  @mixin effectunderlineafter {
+
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+  @mixin bitter {
+    font-family: 'Bitter', serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  @mixin oswald {
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      font-weight: 500;
+  }
+
+  @mixin raleway {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
+  }
+  @mixin hovershine {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%) !important;
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+  }

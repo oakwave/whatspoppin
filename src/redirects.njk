@@ -1,0 +1,12 @@
+---
+permalink: '_redirects'
+---
+
+# Netlify redirects file, edit with your domain
+# https://www.netlify.com/docs/redirects/
+  from = "/blog/*"
+  to = "/posts/*"
+  status = 301
+  force = false
+  query = {path = ":path"}
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}

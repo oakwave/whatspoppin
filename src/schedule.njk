@@ -1,0 +1,19 @@
+---
+permalink: schedule/index.html
+---
+
+{% extends 'layouts/default.njk' %}
+
+{% set codeinjection_head = doc.codeinjection_head %}
+{% set codeinjection_foot = doc.codeinjection_foot %}
+
+{% set title = "Schedule a Consultation" %}
+{% block header %}
+    {% include "partials/header.njk" %}
+{% endblock%}
+{% block content %}
+    <article class="content" style="text-align:center">
+        <h1 class="content-title">Schedule a Consultation</h1>
+        <section class="content-body"><script type="text/javascript" src="https://form.jotform.com/jsform/202744695524057"></script></section>
+    </article>
+{% endblock %}

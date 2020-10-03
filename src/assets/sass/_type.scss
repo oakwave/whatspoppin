@@ -1,0 +1,336 @@
+.post-card-title {
+    color: #ffffff;
+    @include oswald;
+    font-weight: 600;
+}
+.post-card-tags, .quote-author-company {
+    color: #ffffff;
+    @include bitter;
+
+}
+.quote-author-company {
+  font-size: 1.5em;
+}
+.content-body, .quote-text.bigger {
+    @include raleway;
+}
+
+.btnbox, .smallbtn, h1, .h1, .blurb-title.h5, h2, .h2 {
+@include oswald;
+
+}
+
+.blurb-text {
+  font-family: 'Raleway';
+  font-weight: 200;
+}
+
+/*.content-body h1,
+.content-body h2,
+.content-body h3,
+.content-body h4,
+.content-body h5,
+.content-body h6 {
+}*/
+a {
+  color: #6c5ba7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+p,
+ul,
+ol,
+dl,
+blockquote {
+  margin: 0 0 1.5em 0;
+}
+
+ol,
+ul {
+  padding-left: 1.3em;
+  padding-right: 1.5em;
+}
+
+ol ol,
+ul ul,
+ul ol,
+ol ul {
+  margin: 0.5em 0 1em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul,
+ol {
+  max-width: 100%;
+}
+
+li {
+  margin: 0.5em 0;
+  padding-left: 0.3em;
+  line-height: 1.6em;
+}
+
+dt {
+  float: left;
+  margin: 0 20px 0 0;
+  width: 120px;
+  font-weight: 500;
+  text-align: right;
+}
+
+dd {
+  margin: 0 0 5px 0;
+  text-align: left;
+}
+
+blockquote {
+  margin: 0.3em 0 1.8em;
+  padding: 0 1.6em 0 1.6em;
+  border-left: #cbeafb 0.5em solid;
+}
+p {
+  @include raleway;
+}
+blockquote p {
+  margin: 0.8em 0;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+blockquote small {
+  display: inline-block;
+  margin: 0.8em 0 0.8em 1.5em;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+/* Quotation marks */
+blockquote small:before {
+  content: "\2014 \00A0";
+}
+
+blockquote cite {
+  font-weight: bold;
+}
+blockquote cite a {
+  font-weight: normal;
+}
+
+a {
+  color: #6c5ba7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: #efefef;
+  line-height: 1.15;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+.reading-time, .author {
+  @include bitter;
+}
+h1 {
+  margin: 0 0 0.5em 0;
+  font-size: 4rem;
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  margin: 1.5em 0 0.5em 0;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+h3 {
+  margin: 1.5em 0 0.5em 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 1.7rem;
+  }
+}
+
+h4 {
+  margin: 1.5em 0 0.5em 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+h5 {
+  margin: 1.5em 0 0.5em 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+h6 {
+  margin: 1.5em 0 0.5em 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+
+a:hover {
+
+}
+.content-body h1 {
+  margin: 1em 0 0.5em 0;
+  font-size: 3.4rem;
+  @include oswald;
+}
+@media (max-width: 500px) {
+  .content-body h1 {
+    font-size: 2.8rem;
+  }
+}
+
+.content-title {
+  margin: 0 0 0.8em;
+  font-size: 5rem;
+}
+@media (max-width: 500px) {
+  .content-title {
+    margin: 0.8em 0;
+    font-size: 3.4rem;
+    @include oswald;
+  }
+  .content {
+    font-size: 1.8rem;
+  }
+}
+
+.content-body h2 {
+  margin: 0.8em 0 0.4em 0;
+  font-size: 3.2rem;
+  @include oswald;
+}
+@media (max-width: 500px) {
+  .content-body h2 {
+    font-size: 2.6rem;
+  }
+}
+
+.content-body h3 {
+  margin: 0.5em 0 0.2em 0;
+  font-size: 2.8rem;
+  @include oswald;
+}
+@media (max-width: 500px) {
+  .content-body h3 {
+    font-size: 2.2rem;
+  }
+}
+
+.content-body h4 {
+  margin: 0.5em 0 0.2em 0;
+  font-size: 2.4rem;
+ @include oswald;
+}
+@media (max-width: 500px) {
+  .content-body h4 {
+    font-size: 2.2rem;
+  }
+}
+
+
+.content-body h6 {
+  margin: 0.5em 0 0.2em 0;
+  font-size: 2rem;
+  @include bitter;
+}
+
+.content-body figure {
+  margin: 0.4em 0 1.6em;
+  font-size: 2.8rem;
+}
+
+.content-body pre {
+  margin: 0.4em 0 1.8em;
+  font-size: 1.6rem;
+  line-height: 1.4em;
+  white-space: pre-wrap;
+  padding: 20px;
+  background: linear-gradient(90deg, #292929 2.11%, #000000 104.85%);
+  color: #fff;
+  border-radius: 12px;
+}
+.sidebar-anchor {
+  color: #ffffff;
+}
+.sidebar-anchor:hover {
+  transition: all .6s ease;
+  color: #ffffff !important;
+
+}
+body {
+    color: #efefef;
+@include raleway;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  font-style: normal;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+    text-rendering: optimizeLegibility;
+}
+
+.kg-bookmark-container {
+@include bitter;
+}
+
+html {
+    @include raleway;
+}
+
+.content-body h5 {
+    display: block;
+    margin: 0.5em 0;
+    padding: 1em 0 1.5em;
+    border: 0;
+    color: #efefef;
+    font-style: italic;
+    font-size: 3.2rem;
+    line-height: 1.35em;
+    text-align: center;
+    @include bitter;
+  }
+
+
+.oswald {
+  font-family: 'Oswald' !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+}
+
+

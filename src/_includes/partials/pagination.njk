@@ -1,0 +1,12 @@
+{% if pagination.previousPageHref or pagination.nextPageHref %}
+    <nav class="pagination" role="pagination">
+        {% if page.permalink != pagination.previousPageHref %}
+          <a class="smallbtn" href="{{ pagination.previousPageHref }}">Prev page</a>
+        {% endif %}
+        {% if page.permalink != pagination.nextPageHref %}
+        <div class="smallbtn">
+           <a class="effect-shine text" href="{{ pagination.nextPageHref }}">Next page</a></div>
+        {% else %}
+        {% endif %}
+    </nav>
+{% endif %}

@@ -1,0 +1,69 @@
+.slides {
+    background: linear-gradient(90deg, #292929 2.11%, #000000 104.85%);
+
+}
+.logo-container-main{
+
+}
+.homelogo {
+    width: 200px;
+
+}
+.slide {background: transparent !important;}
+.waves {
+    position: absolute;
+    width: 400.27px;
+    height: 400.27px;
+    right: 0;
+    top: 0;
+    background-image: url('/assets/img/wavesup.svg');
+    background-size: contain;
+    background-position-y: 0;
+    z-index: 99999;
+    background-repeat: no-repeat;
+    margin-right: 0%;
+    display: inline-block;
+    margin-left: 60%;
+    margin-bottom: -40%;
+}
+* + .blurb-text {
+    min-height: 125px;
+}
+.counter::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0.625rem;
+    border: #6c5ba7 1px solid;
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 1px #292C31;
+}
+.post-card-footer-right {
+    float: right;
+    text-align: right
+}
+.reading-time-container {
+    text-align:right;
+    margin-top: -20px;
+        float: right;
+        text-align: right;
+        margin-top: -20px;
+
+}
+
+h2.post-card-title.effect-shine {
+    font-size: 2em;
+@include oswald;
+    line-height: 1;
+    padding-top: 15px;
+}
+.reading-time {
+    display: inline-block;
+}
+
+.site-mast {
+    margin-bottom: -200px;
+}

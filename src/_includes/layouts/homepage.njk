@@ -1,0 +1,31 @@
+{% block givinghead %}
+
+<script src="/assets/components/base/core.min.js"></script>
+<script src="/assets/components/base/script.js"></script>
+{% endblock givinghead %}
+{% extends 'layouts/default.njk' %}
+
+{% block content %}
+{% include "partials/slider.njk" %}
+
+<div class="page">
+    <!-- Intro-->
+<!-- About-->
+<a name="partyOnWayne" />
+{% include "partials/stats.njk" %}
+<!-- Features-->
+<a name="partyOnGarth" />
+
+{% include "partials/model.njk" %}
+{% include "partials/process.njk" %}
+<a name="partyOnWayne2" />
+
+{% include "partials/services.njk" %}
+{% include "partials/testimonials.njk" %}
+{% include "partials/clients.njk" %}
+<a name="partyOnGarth2" />
+
+<!-- Our partners-->
+<!-- Get in touch-->
+</div>
+{% endblock content %}

@@ -1,0 +1,51 @@
+html {
+  --scrollbarBG: linear-gradient(90deg, #292929 2.11%, #000000 104.85%);
+  --thumbBG: #6C5BA7;
+  scroll-behavior: smooth;
+
+}
+body::-webkit-scrollbar {
+  width: 11px;
+
+border: 1px solid #121212;
+/* best */
+border-radius: 20px !important;
+
+box-shadow: inset -1px -1px 2px #333333, inset 1px 1px 3px #000000;
+}
+
+
+body {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+
+border: 1px solid #121212;
+/* best */
+border-radius: 20px !important;
+
+box-shadow: inset -1px -1px 2px #333333, inset 1px 1px 3px #000000;
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+
+  border: 1px solid #121212;
+  /* best */
+  border-radius: 20px !important;
+
+  box-shadow: inset -1px -1px 2px #333333, inset 1px 1px 3px #000000;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+
+border: 1px solid #121212;
+/* best */
+border-radius: 20px !important;
+
+box-shadow: inset -1px -1px 2px #333333, inset 1px 1px 3px #000000;
+}
+
+
+

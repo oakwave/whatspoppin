@@ -1,0 +1,313 @@
+.blinkbtn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 0.125rem 0.125rem 0.125rem 0.1875rem;
+  border-style: solid;
+  border-color: transparent;
+  font-weight: 500;
+  letter-spacing: 0;
+  background: linear-gradient(147.42deg, rgba(33, 33, 33, 0.4) 6.32%, rgba(68, 68, 68, 0.4) 92.25%), linear-gradient(128deg, #121212 -79.65%, #333333 151.25%);
+  background-position: 0% 0%, 100% 100%;
+  background-size: 200% 200%;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  color: #b4c0ce;
+  text-shadow: inherit;
+  box-shadow: 8px 8px 22px rgba(21, 22, 24, 0.38), -4px -2px 16px rgba(195, 200, 205, 0.08);
+  transition: 0.5s ease-in-out;
+  padding: 0.6875rem 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  border-radius: 0.625rem;
+}
+.blinkbtn:hover, .blinkbtn.hover, .blinkbtn:active, .blinkbtn.active {
+  text-decoration: none;
+  background-position: 100% 100%, 0% 0%;
+  color: #d7e1ec;
+  box-shadow: 8px 8px 22px rgba(21, 22, 24, 0.38), -4px -2px 16px rgba(195, 200, 205, 0.08), inset -2px -2px 4px rgba(54, 54, 57, 0.16), inset 2px 2px 4px rgba(30, 30, 32, 0.18);
+}
+
+.neubtn{
+        background: linear-gradient(147.42deg, rgba(33, 33, 33, 0.4) 6.32%, rgba(68, 68, 68, 0.4) 92.25%), linear-gradient(128deg, #121212 -79.65%, #333333 151.25%);
+        background-blend-mode: soft-light, normal;
+        box-shadow: -5px -5px 20px #000000, 3px 3px 10px #212121;
+        border-radius: 20px;
+        /* width: 75%; */
+        height: 50PX;
+        position: relative;
+        color: #ffffff;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 5%;
+        z-index: 999;
+        transition: all ease 3s;
+
+
+}
+
+.neubtn::after {
+    background: linear-gradient(0deg, rgba(108, 91, 167, 0.23), rgba(108, 91, 167, 0.23)), linear-gradient(147.42deg, rgba(18, 18, 18, 0.4) 6.32%, rgba(68, 68, 68, 0.4) 92.25%), linear-gradient(128deg, #121212 -79.65%, #333333 151.25%);
+background-blend-mode: normal, soft-light, normal;
+/* pressedin */
+    box-shadow: inset -2px -2px 3px #333333, inset 2px 2px 6px #000000;
+    border-radius: 20px;
+    content: " ";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 50px !important;
+    width: 100%;
+    opacity: 0;
+    text-decoration: none !important;
+    z-index: 0;
+    font-family: 'Oswald' !important;
+    transition: all ease 3s;
+
+}
+
+
+
+
+.neubtn:hover, .neubtn:focus, .neubtn:active {
+    -webkit-transform: scale(1, 1);
+    text-decoration: none !important;
+    transform: scale(1, 1);
+    z-index: -12;
+    transition: all ease 3s;
+    color: #ffffff;
+
+}
+
+.neubtn::after:hover, .neubtn::after:focus, .neubtn::after:active, .neubtn:hover::after, .neubtn:focus::after, .neubtn::active:after
+    {
+    opacity: 1 !important;
+    -webkit-transform: scale(1, 1);
+    text-decoration: none !important;
+    transform: scale(1, 1);
+    z-index: 999;
+    transition: all ease 3s;
+    }
+
+.slidebtnholder{
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  padding: 5%;
+}
+.anudgefromthetop {
+  padding-top: 20px !important;
+}
+  .slidebtn {
+    background: linear-gradient(147.42deg,rgba(33,33,33,.4) 6.32%,rgba(68,68,68,.4) 92.25%),linear-gradient(128deg,#121212 -79.65%,#333 151.25%);
+    background-blend-mode: soft-light,normal;
+    box-shadow: -5px -5px 20px #000, 3px 3px 10px #212121;
+    border-radius: 20px;
+    height: 60px;
+    width: 200px;
+    position: relative;
+    color: #fff;
+    font-family: Oswald,sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    transition: all .6s ease;
+    line-height: 1.1;
+    padding: 10px;
+    margin: 0 auto;
+font-size: .7em;
+font-weight: 200;
+
+
+    }
+
+    .btn {
+     padding: .9em;
+
+    }
+
+/* Create the hidden pseudo-element */
+/* include the shadow for the end state */
+.slidebtn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(108, 91, 167, 0.23), rgba(108, 91, 167, 0.23)), linear-gradient(147.42deg, rgba(18, 18, 18, 0.4) 6.32%, rgba(68, 68, 68, 0.4) 92.25%), linear-gradient(128deg, #121212 -79.65%, #333333 151.25%);
+  background-blend-mode: normal, soft-light, normal;
+  /* pressedin */
+      box-shadow: inset -2px -2px 3px #333333, inset 2px 2px 6px #000000;
+      border-radius: 20px;
+      -webkit-transition: all 0.6s ease;
+      transition: all .6s ease;
+font-size: 12pt;
+
+}
+
+.slidebtn:hover {
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  color: #ffffff;
+
+}
+
+/* Fade in the pseudo-element with the bigger shadow */
+.slidebtn:hover::after {
+  opacity: 1;
+}
+
+.btnbox {
+    background: linear-gradient(147.42deg, rgba(33, 33, 33, 0.4) 6.32%, rgba(68, 68, 68, 0.4) 92.25%), linear-gradient(128deg, #121212 -79.65%, #333333 151.25%);
+    background-blend-mode: soft-light, normal;
+    box-shadow: -5px -5px 20px #000000, 3px 3px 10px #212121;
+    border-radius: 20px;
+    /* width: 75%; */
+    height: 50PX;
+    width: 100%;
+    position: relative;
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 13px;
+    display: inline-block;
+    -webkit-transition: all 0.6s ease;
+    transition: all .6s ease;
+margin-top: 20px;
+font-size: 1.5em;
+
+
+      }
+
+      .btn {
+       padding: .9em;
+
+      }
+
+  /* Create the hidden pseudo-element */
+  /* include the shadow for the end state */
+  .btnbox::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(108, 91, 167, 0.23), rgba(108, 91, 167, 0.23)), linear-gradient(147.42deg, rgba(18, 18, 18, 0.4) 6.32%, rgba(68, 68, 68, 0.4) 92.25%), linear-gradient(128deg, #121212 -79.65%, #333333 151.25%);
+    background-blend-mode: normal, soft-light, normal;
+    /* pressedin */
+        box-shadow: inset -2px -2px 3px #333333, inset 2px 2px 6px #000000;
+        border-radius: 20px;
+        -webkit-transition: all 0.6s ease;
+        transition: all .6s ease;
+
+  }
+
+  .btnbox:hover {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    color: #ffffff;
+
+  }
+
+  /* Fade in the pseudo-element with the bigger shadow */
+  .btnbox:hover::after {
+    opacity: 1;
+  }
+
+  a.effect-shine.text {
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  color: #ffffff;
+
+}
+
+a.effect-shine.text:hover {
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 1em;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+}
+  .smallbtn {
+
+  background: linear-gradient(137.63deg, #0E0F0F 9.53%, #181A1C 95.92%);
+  border: 1px solid #121212;
+  box-shadow: inset -2px -2px 3px #000000, inset 2px 2px 6px #333333;
+    border-radius: 20px;
+    /* width: 75%; */
+    height: 50PX;
+    width: 150px;
+    position: relative;
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5%;
+    display: inline-block;
+    -webkit-transition: all 0.6s ease;
+    transition: all .6s ease;
+
+
+
+      }
+
+  /* Create the hidden pseudo-element */
+  /* include the shadow for the end state */
+  .smallbtn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+
+    color: #ffffff;
+
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(137.63deg, #0E0F0F 9.53%, #181A1C 95.92%);
+    box-shadow: 1px 1px 10px #6C5BA7, inset -2px -2px 3px #000000, inset 2px 2px 6px #333333;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+
+        -webkit-transition: all 0.6s ease;
+        transition: all .6s ease;
+
+  }
+
+  .smallbtn:hover {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    @include hovershine;
+
+  }
+
+  /* Fade in the pseudo-element with the bigger shadow */
+  .smallbtn:hover::after {
+    opacity: 1;
+  }
