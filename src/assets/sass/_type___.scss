@@ -3,14 +3,10 @@
     @include oswald;
     font-weight: 600;
 }
-.post-card-tags, .quote-author-company, .ln-card .top-author-meta {
+.post-card-tags, .quote-author-company {
     color: #ffffff;
     @include bitter;
 
-}
-
-.ln-card .card-title {
-  @include oswald;
 }
 .quote-author-company {
   font-size: 1.5em;

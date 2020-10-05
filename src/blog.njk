@@ -12,11 +12,12 @@ pagination:
 {% set title = "Posts" %}
 
 {% block content %}
+<div class="container page">
     <section class="post-feed">
         {% for post in posts %}
             {{ card(post) }}
         {% endfor %}
     </section>
-
+</div>
     {% include "partials/pagination.njk" %}
 {% endblock%}

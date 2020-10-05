@@ -172,28 +172,35 @@ font-size: 12pt;
     border-radius: 20px;
     /* width: 75%; */
     height: 50PX;
-    width: 40%;
-    margin-left: 20px;
-    display: inline-block;
+    width: 100%;
     position: relative;
-    color: #ffffff;
+    color: #ffffff !important;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
+    padding-top: 13px;
     display: inline-block;
     -webkit-transition: all 0.6s ease;
     transition: all .6s ease;
 margin-top: 20px;
-padding-bottom: 5px;
-margin-left: 20px;
-
+font-size: 1.5em;
+padding: 10px;
 
       }
-      .btnbox a, .btnbox a:hover {
-        color: #ffffff;
-        padding-bottom: 10px;
+      .theatrics {
+        text-align: center;
+    }
+    a.ae-3.fromCenter.crop.margin-top-1.tinybtn.anudgefromthetop.effect-shine.theatrical.done, a.ae-3.fromCenter.crop.margin-top-1.tinybtn.anudgefromthetop.effect-shine.theatrical.done:hover, a.ae-3.fromCenter.crop.margin-top-1.tinybtn.anudgefromthetop.theatrical.done, .theatrical, .theatrical:hover, a.ae-3.fromCenter.crop.margin-top-1.tinybtn.anudgefromthetop.theatrical.done:hover {
+        color: #ffffff !important;
         font-size: large;
+        @include bitter;
+        font-weight: 300;
+      }
+
+      .btnbox a{
+        color: #ffffff;
+        
       }
 
       .btn {
@@ -235,6 +242,7 @@ margin-left: 20px;
   }
 
   a.effect-shine.text {
+  position: absolute;
   top: 5px;
   left: 30px;
   color: #ffffff;
@@ -248,12 +256,14 @@ a.effect-shine.text:hover {
 }
 
 .pagination a {
-  /* display: inline-block; */
-  /* padding: 8px; */
+  display: inline-block;
+  padding: 10px 15px;
   text-decoration: none;
-  font-size: 1rem;
-  /* line-height: 1em; */
-
+  font-size: 1.4rem;
+  line-height: 1em;
+  position: absolute;
+  top: 50%;
+  left: 3%;
 }
   .smallbtn {
 
@@ -268,8 +278,10 @@ a.effect-shine.text:hover {
     color: #ffffff;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
+    font-size: 1em;
     text-align: center;
     vertical-align: middle;
+    padding-top: 5%;
     display: inline-block;
     -webkit-transition: all 0.6s ease;
     transition: all .6s ease;
@@ -277,7 +289,7 @@ a.effect-shine.text:hover {
 
 
       }
-   
+
   /* Create the hidden pseudo-element */
   /* include the shadow for the end state */
   .smallbtn::after {
@@ -312,13 +324,4 @@ a.effect-shine.text:hover {
   /* Fade in the pseudo-element with the bigger shadow */
   .smallbtn:hover::after {
     opacity: 1;
-  }
-
-
-  a.ae-3.fromCenter.crop.margin-top-1.tinybtn.anudgefromthetop.effect-shine.theatrical.done, a.ae-3.fromCenter.crop.margin-top-1.tinybtn.anudgefromthetop.effect-shine.theatrical.done:hover, a.ae-3.fromCenter.crop.margin-top-1.tinybtn.anudgefromthetop.effect-shine.theatrical, a.ae-3.fromCenter.crop.margin-top-1.tinybtn.anudgefromthetop.effect-shine.theatrical:hover {
-    color: #fff !important;
-    font-size: large;
-    @include bitter;
-    font-weight: 300;
-    text-align: center;
   }

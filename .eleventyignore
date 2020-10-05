@@ -2,3 +2,7 @@
 ./node_modules/
 ./src/_zbases/
 ./dist/
+./dist
+./src/_zbases
+./node_modules
+./src/assets
